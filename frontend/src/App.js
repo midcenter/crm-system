@@ -267,7 +267,7 @@ export default function App() {
     .sidebar-user-name { font-size: 13px; font-weight: 600; color: #fff; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
     .sidebar-user-role { font-size: 11px; color: rgba(255,255,255,0.4); }
 
-    .main-content { flex: 1; margin-left: 260px; transition: margin-left 0.3s; }
+    .sidebar {position: fixed;width: 260px;}
     .main-content.sidebar-collapsed { margin-left: 72px; }
     .topbar {
       height: 64px; background: var(--card-bg); border-bottom: 1px solid var(--border);
