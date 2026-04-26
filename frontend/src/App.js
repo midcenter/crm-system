@@ -228,7 +228,7 @@ export default function App() {
     .app-layout { display: flex; min-height: 100vh; }
     .sidebar {
       width: 260px; min-height: 100vh; background: var(--sidebar-bg);
-      display: flex; flex-direction: column; position: fixed; left: 0; top: 0; bottom: 0;
+      display: flex; flex-direction: column; p.sidebar {position: relative; left: 0; top: 0; bottom: 0;
       z-index: 100; transition: width 0.3s ease; overflow: hidden;
     }
     .sidebar.collapsed { width: 72px; }
