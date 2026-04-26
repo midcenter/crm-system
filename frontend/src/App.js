@@ -230,8 +230,11 @@ export default function App() {
   width: 100%;
   min-height: 100vh;
 }
-    .sidebar {
-      width: 260px; min-height: 100vh; background: var(--sidebar-bg);
+   .main-content {
+  flex: 1;
+  width: 100%;
+  min-width: 0; /* 🔥 ƏN VACİB SƏTR */
+}
       display: flex; flex-direction: column; p.sidebar {position: relative; left: 0; top: 0; bottom: 0;
       z-index: 100; transition: width 0.3s ease; overflow: hidden;
     }
