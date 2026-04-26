@@ -225,7 +225,11 @@ export default function App() {
       font-size: 11px; font-weight: 600; color: rgba(255,255,255,0.4); letter-spacing: 1px;
     }
 
-    .app-layout { display: flex; min-height: 100vh; }
+    .app-layout {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+}
     .sidebar {
       width: 260px; min-height: 100vh; background: var(--sidebar-bg);
       display: flex; flex-direction: column; p.sidebar {position: relative; left: 0; top: 0; bottom: 0;
