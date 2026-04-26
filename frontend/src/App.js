@@ -225,13 +225,8 @@ export default function App() {
       font-size: 11px; font-weight: 600; color: rgba(255,255,255,0.4); letter-spacing: 1px;
     }
 
-    .app-layout {
-  display: flex;
-  width: 100%;
-  min-height: 100vh;
-}
-   .main-content {
-  flex: 1;
+    .app-layout {display: flex; width: 100%;min-height: 100vh;}
+  .main-content {flex: 1;
   width: 100%;
   min-width: 0; /* 🔥 ƏN VACİB SƏTR */
 }
@@ -292,7 +287,7 @@ export default function App() {
     }
     .logout-btn:hover { border-color: var(--danger); color: var(--danger); background: rgba(239,68,68,0.05); }
 
-    .page-body { padding: 28px; }
+    .page-body {width: 100%;}
     .stat-grid {grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
     .stat-card {
@@ -308,7 +303,7 @@ export default function App() {
     .stat-value { font-size: 28px; font-weight: 800; line-height: 1; font-family: 'JetBrains Mono', monospace; }
     .stat-label { font-size: 12px; color: var(--muted); margin-top: 4px; font-weight: 500; }
 
-    ..mod-grid {
+    .mod-grid {
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
     .mod-card {
