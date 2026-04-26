@@ -225,12 +225,7 @@ export default function App() {
       font-size: 11px; font-weight: 600; color: rgba(255,255,255,0.4); letter-spacing: 1px;
     }
 
-    .app-layout {display: flex; width: 100%;min-height: 100vh;}
-  .main-content {flex: 1;
-  width: 100%;
-  min-width: 0; /* 🔥 ƏN VACİB SƏTR */
-}
-      display: flex; flex-direction: column; p.sidebar {position: relative; left: 0; top: 0; bottom: 0;
+       display: flex; flex-direction: column; p.sidebar {position: relative; left: 0; top: 0; bottom: 0;
       z-index: 100; transition: width 0.3s ease; overflow: hidden;
     }
     .sidebar.collapsed { width: 72px; }
@@ -268,15 +263,27 @@ export default function App() {
     .sidebar-user-info { overflow: hidden; }
     .sidebar-user-name { font-size: 13px; font-weight: 600; color: #fff; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
     .sidebar-user-role { font-size: 11px; color: rgba(255,255,255,0.4); }
+.app-layout {display: flex; width: 100%;min-height: 100vh;}
 
-    .sidebar {
-  position: fixed;
+.main-content {
+  flex: 1;
+  width: 100%;
+  min-width: 0;
+}
+
+display: flex;
+flex-direction: column;
+
+p.sidebar {
+  position: relative;
   left: 0;
   top: 0;
-  width: 260px;
-  height: 100vh;
+  bottom: 0;
+  z-index: 100;
+  transition: width 0.3s ease;
+  overflow: hidden;
 }
-    .main-content.sidebar-collapsed { margin-left: 72px; }
+      .main-content.sidebar-collapsed { margin-left: 72px; }
     .topbar {
       height: 64px; background: var(--card-bg); border-bottom: 1px solid var(--border);
       display: flex; align-items: center; justify-content: space-between;
