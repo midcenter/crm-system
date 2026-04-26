@@ -286,7 +286,8 @@ export default function App() {
     .logout-btn:hover { border-color: var(--danger); color: var(--danger); background: rgba(239,68,68,0.05); }
 
     .page-body { padding: 28px; }
-    .stat-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 28px; }
+    .stat-grid {grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
     .stat-card {
       background: var(--card-bg); border: 1px solid var(--border); border-radius: 16px;
       padding: 20px 22px; display: flex; align-items: center; gap: 16px;
@@ -300,7 +301,9 @@ export default function App() {
     .stat-value { font-size: 28px; font-weight: 800; line-height: 1; font-family: 'JetBrains Mono', monospace; }
     .stat-label { font-size: 12px; color: var(--muted); margin-top: 4px; font-weight: 500; }
 
-    .mod-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    ..mod-grid {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
     .mod-card {
       background: var(--card-bg); border: 1px solid var(--border); border-radius: 16px;
       padding: 24px; cursor: pointer; transition: all 0.25s; position: relative; overflow: hidden;
